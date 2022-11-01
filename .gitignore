@@ -1,0 +1,5 @@
+
+*.backup
+*.tfstate
+*.0_x5
+*.hcl
