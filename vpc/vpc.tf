@@ -22,14 +22,14 @@ resource "aws_vpc" "tf-vpc" {
     }
 }
 
-# resource "aws_subnet" "tf-vpc-subnet" {
+resource "aws_subnet" "tf-vpc-subnet" {
 
-#     cidr_block = "18.59.1.0/24"
-#     vpc_id = aws_vpc.tf-vpc.id
+    cidr_block = "18.59.1.0/24"
+    vpc_id = aws_vpc.tf-vpc.id
 
-#     tags = {
-#       Name = "terraform-subnet-DONOTOTOUCH"
-#     }
-# }
+    tags = {
+      Name = "terraform-subnet-DONOTOTOUCH"
+    }
+}
 
 
