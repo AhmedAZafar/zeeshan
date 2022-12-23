@@ -32,4 +32,14 @@ resource "aws_subnet" "tf-vpc-subnet" {
     }
 }
 
+# Inserting unlawful terraform entry
+resource "aws_subnet" "tf-vpc-subnet" {
+
+    cidr_block = "18.59.1.0/24"
+    vpc_id = aws_vpc.tf-vpc.id
+
+    tags = {
+      Name = "terraform-subnet-DONOTOTOUCH"
+    }
+}
 
