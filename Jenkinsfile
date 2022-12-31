@@ -1,0 +1,1 @@
+echo 'Jenkins scheduled and successfully started a job'
