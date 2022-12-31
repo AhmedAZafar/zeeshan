@@ -10,6 +10,8 @@ pipeline {
                 //sh 'cat PR.txt'
                 cleanWs()
                 checkout scm
+
+                //gradlew junit 
             }
         }
 
@@ -23,7 +25,7 @@ pipeline {
         stage('check AWS connection') {
             steps {
                 sh 'whoami'
-                sh 'aws s3 ls'
+                aws s3 ls
             }
         }
     }
