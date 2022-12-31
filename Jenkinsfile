@@ -17,7 +17,7 @@ pipeline {
 
         stage('Cleanup'){
             steps {
-                sh 'rm -rf PR.txt dummy.txt'
+                //sh 'rm -rf PR.txt dummy.txt'
                 sh 'ls -al'
             }
         }
@@ -26,6 +26,7 @@ pipeline {
             steps {
                 //sh 'whoami'
                 sh 'aws s3 ls'
+                sh 'aws s3 cp PR.txt s3://huzaifa-tf-backend'
             }
         }
     }
