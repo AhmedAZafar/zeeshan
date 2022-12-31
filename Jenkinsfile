@@ -14,6 +14,7 @@ pipeline {
         stage('Stage 2'){
             steps {
                 sh 'rm -rf PR.txt dummy.txt'
+                sh 'ls -al'
             }
         }
     }
