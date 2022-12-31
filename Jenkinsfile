@@ -22,6 +22,7 @@ pipeline {
 
         stage('check AWS connection') {
             steps {
+                sh 'whoami'
                 sh 'aws s3 ls'
             }
         }
